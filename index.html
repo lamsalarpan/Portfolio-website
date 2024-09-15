@@ -29,14 +29,22 @@
                         Loading current time...
                     </div>
                     
+                    <div class="time-container" id="time">
+                        Loading current time...
+                    </div>
+                    
                     <script>
                         function showTime() {
                             const timeElement = document.getElementById("time");
                             const now = new Date();
-                            const hours = now.getHours().toString().padStart(2, '0');
+                            let hours = now.getHours();
                             const minutes = now.getMinutes().toString().padStart(2, '0');
                             const seconds = now.getSeconds().toString().padStart(2, '0');
-                            timeElement.textContent = hours + ":" + minutes + ":" + seconds;
+                            const ampm = hours >= 12 ? 'PM' : 'AM';
+                            hours = hours % 12;
+                            hours = hours ? hours : 12; // the hour '0' should be '12'
+                            const timeString = hours + ":" + minutes + ":" + seconds + " " + ampm;
+                            timeElement.textContent = timeString;
                         }
                     
                         // Update time every second
