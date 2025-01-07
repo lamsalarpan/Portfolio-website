@@ -10,20 +10,6 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-/* Default light theme */
-body {
-  background-color: white;
-  color: black;
-  font-family: Arial, sans-serif;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-/* Dark theme */
-body.dark-theme {
-  background-color: #121212;
-  color: #f1f1f1;
-}
-
 :root {
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
