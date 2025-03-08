@@ -8,19 +8,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
     <style>
         .slider-container {
-            overflow: hidden;
             width: 100%;
-            max-width: 800px;
+            max-width: 600px;
             position: relative;
             margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
         .slider-wrapper {
             display: flex;
             transition: transform 0.5s ease-in-out;
+            width: 500%;
         }
         .slider img {
             width: 100%;
+            height: auto;
             flex-shrink: 0;
+            object-fit: cover;
         }
         .prev-btn, .next-btn {
             position: absolute;
@@ -32,12 +37,21 @@
             padding: 10px;
             cursor: pointer;
             z-index: 10;
+            border-radius: 50%;
         }
         .prev-btn {
             left: 10px;
         }
         .next-btn {
             right: 10px;
+        }
+        @media (max-width: 768px) {
+            .slider-container {
+                max-width: 100%;
+            }
+            .prev-btn, .next-btn {
+                padding: 5px;
+            }
         }
     </style>
 </head>
@@ -49,7 +63,7 @@
     </nav>
 
     <section class="py-5">
-        <div class="container">
+        <div class="container text-center">
             <div class="slider-container">
                 <button class="prev-btn">&#10094;</button>
                 <div class="slider-wrapper" id="slider">
@@ -73,7 +87,7 @@
             if (index >= slider.children.length) {
                 index = 0;
             }
-            slider.style.transform = `translateX(-${index * 100}%)`;
+            slider.style.transform = `translateX(-${index * 100 / slider.children.length}%)`;
         }
         
         let autoSlide = setInterval(scrollSlider, 5000);
@@ -81,14 +95,14 @@
         document.querySelector('.prev-btn').addEventListener('click', () => {
             clearInterval(autoSlide);
             index = index > 0 ? index - 1 : slider.children.length - 1;
-            slider.style.transform = `translateX(-${index * 100}%)`;
+            slider.style.transform = `translateX(-${index * 100 / slider.children.length}%)`;
             autoSlide = setInterval(scrollSlider, 5000);
         });
         
         document.querySelector('.next-btn').addEventListener('click', () => {
             clearInterval(autoSlide);
             index = index < slider.children.length - 1 ? index + 1 : 0;
-            slider.style.transform = `translateX(-${index * 100}%)`;
+            slider.style.transform = `translateX(-${index * 100 / slider.children.length}%)`;
             autoSlide = setInterval(scrollSlider, 5000);
         });
     </script>
