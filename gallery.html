@@ -1,110 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Arpan Lamsal - Gallery</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
-    <style>
-        .slider-container {
-            width: 100%;
-            max-width: 600px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .slider-wrapper {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-            width: 500%;
-        }
-        .slider img {
-            width: 100%;
-            height: auto;
-            flex-shrink: 0;
-            object-fit: cover;
-        }
-        .prev-btn, .next-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 10;
-            border-radius: 50%;
-        }
-        .prev-btn {
-            left: 10px;
-        }
-        .next-btn {
-            right: 10px;
-        }
-        @media (max-width: 768px) {
-            .slider-container {
-                max-width: 100%;
-            }
-            .prev-btn, .next-btn {
-                padding: 5px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Arpan Lamsal</span></a>
-        </div>
-    </nav>
-
-    <section class="py-5">
-        <div class="container text-center">
-            <div class="slider-container">
-                <button class="prev-btn">&#10094;</button>
-                <div class="slider-wrapper" id="slider">
-                   
-                    <img src="image2.jpg" alt="Image 2">
-                    <img src="image3.jpg" alt="Image 3">
-                    <img src="image4.jpg" alt="Image 4">
-                    <img src="image5.jpg" alt="Image 5">
+    <head>
+          <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content />
+        <meta name="author" content />
+        <title>Arpan lamsal- Contact</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column">
+         <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Arpan lamsal</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="socialmedia.html">Social media</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <button class="next-btn">&#10095;</button>
+            </nav>
+            <!-- Page content-->
+              <section>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/image1.jpg" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/image2.jpg" class="d-block w-100" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/image3.jpg" class="d-block w-100" alt="Image 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </div>
-    </section>
 
-    <script>
-        const slider = document.getElementById('slider');
-        let index = 0;
-        
-        function scrollSlider() {
-            index++;
-            if (index >= slider.children.length) {
-                index = 0;
-            }
-            slider.style.transform = `translateX(-${index * 100 / slider.children.length}%)`;
-        }
-        
-        let autoSlide = setInterval(scrollSlider, 5000);
-        
-        document.querySelector('.prev-btn').addEventListener('click', () => {
-            clearInterval(autoSlide);
-            index = index > 0 ? index - 1 : slider.children.length - 1;
-            slider.style.transform = `translateX(-${index * 100 / slider.children.length}%)`;
-            autoSlide = setInterval(scrollSlider, 5000);
-        });
-        
-        document.querySelector('.next-btn').addEventListener('click', () => {
-            clearInterval(autoSlide);
-            index = index < slider.children.length - 1 ? index + 1 : 0;
-            slider.style.transform = `translateX(-${index * 100 / slider.children.length}%)`;
-            autoSlide = setInterval(scrollSlider, 5000);
-        });
-    </script>
-</body>
+            <script>
+                var myCarousel = document.querySelector('#carouselExampleIndicators');
+                var carousel = new bootstrap.Carousel(myCarousel, {
+                    interval: 4000,
+                    ride: 'carousel'
+                });
+            </script>
+              </section>
+        </main>
+        <!-- Footer-->
+         <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                 <center>   <div class="col-auto"><div class="small m-0">Copyright &copy; Arpan Lamsal 2023</div></center></div>
+                    
+                     <center>   <a class="small" href="mailto: arpanlamsalofficial@gmail.com">Contact</a></center>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
