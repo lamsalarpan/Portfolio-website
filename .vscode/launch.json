@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "PowerShell: Windows PowerShell",
+            "type": "PowerShell",
+            "request": "launch",
+            "sessionName": "Windows PowerShell (x64)"
+        },
+        {
+            "type": "cmake",
+            "request": "launch",
+            "name": "CMake: Configure project",
+            "cmakeDebugType": "configure",
+            "clean": false,
+            "configureAll": false
+        },
+        {
             "name": "PowerShell Run Pester Tests",
             "type": "PowerShell",
             "request": "launch",
