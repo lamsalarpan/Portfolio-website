@@ -46,34 +46,6 @@
                         // Show the time when the page loads
                         showTime();
                     </script>
-    <script>
-        // Show popup on page load
-        window.onload = function() {
-            setTimeout(function() {
-                if (confirm("Do you want to enable dark mode?")) {
-                    document.body.classList.add("dark-mode");
-                }
-            }, 500);
-        };
-    </script>
-    <style>
-        .dark-mode {
-            background-color: #181818 !important;
-            color: #fff !important;
-        }
-        .dark-mode .navbar,
-        .dark-mode .container,
-        .dark-mode .profile {
-            background-color: #222 !important;
-            color: #fff !important;
-        }
-        .dark-mode .nav-link,
-        .dark-mode .fw-bolder,
-        .dark-mode .text-gradient,
-        .dark-mode .navbar-brand {
-            color: #fff !important;
-        }
-    </style>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
@@ -104,7 +76,7 @@
                             </div>
                         </div>
                         <div class="col-xxl-7">
-                     </div>       <!-- Header profile picture-->
+                            <!-- Header profile picture-->
                             <div class="d-flex justify-content-center mt-5 mt-xxl-0">
                                 <div class="profile bg-gradient-primary-to-secondary">
                                     <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
