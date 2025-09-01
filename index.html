@@ -20,7 +20,7 @@
     <body class="d-flex flex-column h-100">
           <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
                 <div class="container px-5">
                     <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Arpan lamsal</span></a>
                     <div class="time-container" id="time">
@@ -46,6 +46,34 @@
                         // Show the time when the page loads
                         showTime();
                     </script>
+    <script>
+        // Show popup on page load
+        window.onload = function() {
+            setTimeout(function() {
+                if (confirm("Do you want to enable dark mode?")) {
+                    document.body.classList.add("dark-mode");
+                }
+            }, 500);
+        };
+    </script>
+    <style>
+        .dark-mode {
+            background-color: #181818 !important;
+            color: #fff !important;
+        }
+        .dark-mode .navbar,
+        .dark-mode .container,
+        .dark-mode .profile {
+            background-color: #222 !important;
+            color: #fff !important;
+        }
+        .dark-mode .nav-link,
+        .dark-mode .fw-bolder,
+        .dark-mode .text-gradient,
+        .dark-mode .navbar-brand {
+            color: #fff !important;
+        }
+    </style>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
