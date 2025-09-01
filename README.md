@@ -49,17 +49,6 @@ Portfolio-website/
 
 ---
 
-## 🤝 Contribution
-Contributions are welcome!  
-1. Fork the repo  
-2. Create a new branch: `git checkout -b feature-branch`  
-3. Make your changes  
-4. Commit: `git commit -m "Added new feature"`  
-5. Push: `git push origin feature-branch`  
-6. Open a Pull Request  
-
----
-
 ## 📬 Contact
 📧 **Email:** arpanlamsal45@gmail.com  
 🐙 **GitHub:** [@lamsalarpan](https://github.com/lamsalarpan)  
