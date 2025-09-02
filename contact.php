@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Email settings
-    $to      = "arpanlamsalofficial@example.com"; 
+    $to      = "info@arpanlamsal.com.np"; 
     $subject = "New Contact Form Message from $name";
     $body    = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
     $headers = "From: $email";
