@@ -56,35 +56,23 @@
                         <div class="row gx-5 justify-content-center">
                             <div class="col-lg-8 col-xl-6">
                                 <!-- Contact form-->
-                                <form id="contactForm" action="contact.php" method="POST">
-                                    <!-- Name input-->
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." required />
-                                        <label for="name">Full name</label>
-                                        <div class="invalid-feedback">A name is required.</div>
-                                    </div>
-                                    <!-- Email address input-->
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" required />
-                                        <label for="email">Email address</label>
-                                        <div class="invalid-feedback">An email is required.</div>
-                                        <div class="invalid-feedback">Email is not valid.</div>
-                                    </div>
-                                    <!-- Phone number input-->
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" required />
-                                        <label for="phone">Phone number</label>
-                                        <div class="invalid-feedback">A phone number is required.</div>
-                                    </div>
-                                    <!-- Message input-->
-                                    <div class="form-floating mb-3">
-                                        <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
-                                        <label for="message">Message</label>
-                                        <div class="invalid-feedback">A message is required.</div>
-                                    </div>
-                                    <div class="d-grid">
-                                        <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
-                                    </div>
+<form action="https://api.web3forms.com/submit" method="POST">
+     <input type="hidden" name="access_key" value="cacb0ab4-2974-4b6c-adba-6726798ad8b8">
+  <label for="name">Full Name:</label>
+  <input type="text" name="entry.1234567890" id="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" name="entry.2345678901" id="email" required>
+
+  <label for="phone">Phone:</label>
+  <input type="text" name="entry.3456789012" id="phone">
+
+  <label for="message">Message:</label>
+  <textarea name="entry.4567890123" id="message" required></textarea>
+<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+
+  <button type="submit">Send Message</button>
                                 </form>
                             </div>
 
