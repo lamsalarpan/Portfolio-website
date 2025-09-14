@@ -56,24 +56,21 @@
                         <div class="row gx-5 justify-content-center">
                             <div class="col-lg-8 col-xl-6">
                                 <!-- Contact form-->
-<form action="https://api.web3forms.com/submit" method="POST">
-     <input type="hidden" name="access_key" value="cacb0ab4-2974-4b6c-adba-6726798ad8b8">
-  <label for="name">Full Name:</label>
-  <input type="text" name="entry.1234567890" id="name" required>
+                                <div id="contactForm">
+                                    <form action="https://api.web3forms.com/submit" method="POST">
+                                        <input type="hidden" name="access_key" value="cacb0ab4-2974-4b6c-adba-6726798ad8b8">
 
-  <label for="email">Email:</label>
-  <input type="email" name="entry.2345678901" id="email" required>
+                                        <input type="text" name="name" required>
+                                        <input type="email" name="email" required>
+                                        <textarea name="message" required></textarea>
 
-  <label for="phone">Phone:</label>
-  <input type="text" name="entry.3456789012" id="phone">
+                                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-  <label for="message">Message:</label>
-  <textarea name="entry.4567890123" id="message" required></textarea>
-<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                                        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
 
+                                        <button type="submit">Submit Form</button>
 
-  <button type="submit">Send Message</button>
-                                </form>
+                                    </form>
                             </div>
 
                             <script>
@@ -87,7 +84,6 @@
                                     }
                                 });
                             </script>
-                            </div>
                         </div>
                     </div>
                 </div>
